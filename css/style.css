@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Pacifico&family=Permanent+Marker&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: black;
+}
+
+nav {
+  padding: 15px 0px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 8px;
+  justify-content: center;
+}
+
+li a {
+  color: white;
+  font-size: 11px;
+  text-decoration: none;
+  font-family: "Permanent Marker", cursive;
+}
+
+.last-page ul {
+  padding-right: 35px;
+}
+
+main {
+  background-color: black;
+  color: white;
+  font-family: "Pacifico", cursive;
+  padding-bottom: 10px;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  font-size: 12px;
+  padding: 15px 0px;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+footer img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+footer div {
+  display: flex;
+  gap: 5px;
+}
+
+.titulo-messi h1 {
+  text-align: center;
+  font-size: 15px;
+  position: relative;
+  top: 25px;
+  color: black;
+  font-family: "Caprasimo", cursive;
+}
+
+.titulo-messi img, .titulo-ronaldo img {
+  width: 100%;
+  height: 30px;
+}
+
+.description, .card {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.description p, .card p {
+  text-align: center;
+}
+
+.description img, .card img {
+  width: 100%;
+  height: 500px;
+}
+
+.titulo-ronaldo h2 {
+  text-align: center;
+  font-size: 15px;
+  position: relative;
+  top: 25px;
+  color: black;
+  font-family: "Caprasimo", cursive;
+}
+
+.card-titulo, .card-body-titulo {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+  color: skyblue;
+}
+
+.card-body-titulo {
+  color: red;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+
+.cajas, .cajitas {
+  text-align: center;
+  background-color: white;
+  color: black;
+  border-radius: 50px;
+}
+
+.cajas img, .cajitas img {
+  width: 100%;
+  height: 500px;
+  border-radius: 40px;
+}
+
+.tarjeta-titulo {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.tarjeta, .tarjeta-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tarjeta img, .tarjeta-body img {
+  width: 100%;
+  height: 500px;
+}
+
+.tarjetita, .tarjetita-body {
+  background-color: white;
+  color: black;
+  gap: 10px;
+  border-radius: 100px;
+  text-align: center;
+}
+
+.tarjetita h2 {
+  color: skyblue;
+  font-size: 18px;
+}
+
+.tarjetita-body h4 {
+  color: red;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 430px) {
+  li a {
+    font-size: 14px;
+  }
+  .titulo-messi h1, .titulo-ronaldo h2 {
+    font-size: 22px;
+  }
+  .description p, .card p, .card-body p, .tarjeta p {
+    font-size: 18px;
+  }
+  .card-titulo, .card-body-titulo, .tarjeta-titulo {
+    font-size: 25px;
+  }
+  .tarjetita h2, .tarjetita-body h4 {
+    font-size: 22px;
+  }
+  footer img {
+    width: 45px;
+    height: 45px;
+  }
+}
+@media screen and (min-width: 480px) {
+  li a {
+    font-size: 15px;
+  }
+  ul {
+    gap: 18px;
+  }
+  .titulo-messi h1, .titulo-ronaldo h2 {
+    font-size: 23px;
+    top: 32px;
+  }
+  .description p, .card p, .card-body p, .tarjeta p {
+    font-size: 20px;
+  }
+  .titulo-messi img, .titulo-ronaldo img, .title img {
+    height: 40px;
+  }
+  .card-titulo, .card-body-titulo, .tarjeta-titulo {
+    font-size: 30px;
+  }
+  .tarjetita h2, .tarjetita-body h4 {
+    font-size: 27px;
+  }
+  footer img {
+    width: 55px;
+    height: 55px;
+  }
+}
+@media screen and (min-width: 600px) {
+  li a {
+    font-size: 20px;
+  }
+  ul {
+    gap: 20px;
+  }
+  .titulo-messi h1, .titulo-ronaldo h2 {
+    font-size: 27px;
+    top: 40px;
+  }
+  .description p, .card p, .card-body p, .tarjeta p {
+    font-size: 22px;
+  }
+  .titulo-messi img, .titulo-ronaldo img, .title img {
+    height: 50px;
+  }
+  .card-titulo, .card-body-titulo, .tarjeta-titulo {
+    font-size: 35px;
+  }
+  .tarjetita h2, .tarjetita-body h4 {
+    font-size: 31px;
+  }
+  footer div {
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  ul {
+    justify-content: end;
+  }
+  a {
+    transition: 1s;
+  }
+  li:hover a {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+  }
+  .messi:hover a {
+    background-color: white;
+    color: skyblue;
+  }
+  .ronaldo:hover a {
+    background-color: rgb(2, 175, 2);
+    color: red;
+  }
+  /* Inicio */
+  .titulo-messi div, .titulo-ronaldo div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .titulo-messi h1, .titulo-ronaldo h2 {
+    font-size: 32px;
+    top: 53px;
+  }
+  .titulo-messi img, .titulo-ronaldo img {
+    width: 70%;
+    height: 70px;
+    border-radius: 30px;
+  }
+  .description {
+    flex-direction: row;
+  }
+  .description p {
+    font-size: 25px;
+  }
+  .description div {
+    padding: 15px;
+    width: 50%;
+  }
+  .description img {
+    height: 100%;
+    object-fit: cover;
+  }
+  /* messi y ronaldo */
+  .card-images {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px;
+  }
+  .card-images img {
+    width: 33%;
+  }
+  /* Estadisticas */
+  .card-body {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "area1 area2 area3" "area4 none area5";
+    gap: 30px;
+  }
+  .cajas, .cajitas {
+    background-color: black;
+    color: white;
+    border-radius: 0%;
+    box-shadow: 3px 3px 3px 2px white;
+    transition: 0.5s;
+  }
+  .cajas img, .cajitas img {
+    border-radius: 0%;
+  }
+  .cajas:hover {
+    box-shadow: 3px 3px 3px 2px skyblue;
+  }
+  .cajitas:hover {
+    box-shadow: 3px 3px 3px 2px red;
+  }
+  .c1 {
+    grid-area: area1;
+  }
+  .c2 {
+    grid-area: area2;
+  }
+  .c3 {
+    grid-area: area3;
+  }
+  .c4 {
+    grid-area: area4;
+    position: relative;
+    left: 100px;
+  }
+  .c5 {
+    grid-area: area5;
+    position: relative;
+    right: 100px;
+  }
+  /* Trofeos */
+  .tarjeta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "area1 area2" "area3 area4" "area5 area5";
+    gap: 20px;
+    padding: 20px;
+  }
+  .t1 {
+    grid-area: area1;
+  }
+  .t2 {
+    grid-area: area2;
+  }
+  .t3 {
+    grid-area: area3;
+  }
+  .t4 {
+    grid-area: area4;
+  }
+  .t5 {
+    grid-area: area5;
+  }
+  .tarjeta-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "area1 area2 area3" "area4 area5 area6" "area7 area7 area7";
+    gap: 15px;
+    padding: 20px;
+  }
+  .b1 {
+    grid-area: area1;
+  }
+  .b2 {
+    grid-area: area2;
+  }
+  .b3 {
+    grid-area: area3;
+  }
+  .b4 {
+    grid-area: area4;
+  }
+  .b5 {
+    grid-area: area5;
+  }
+  .b6 {
+    grid-area: area6;
+  }
+  .b7 {
+    grid-area: area7;
+  }
+  .tarjetita, .tarjetita-body {
+    background-color: black;
+    color: white;
+    box-shadow: 3px 0px 3px 2px white;
+    border-radius: 0%;
+    transition: 1s;
+  }
+  .tarjetita:hover {
+    box-shadow: 3px 0px 3px 2px skyblue;
+  }
+  .tarjetita-body:hover {
+    box-shadow: 3px 0px 3px 2px red;
+  }
+  .card-titulo, .card-body-titulo, .tarjeta-titulo {
+    font-size: 40px;
+  }
+  .tarjetita h2, .tarjetita-body h4 {
+    font-size: 35px;
+  }
+  footer {
+    justify-content: space-around;
+  }
+  footer img {
+    width: 70px;
+    height: 70px;
+  }
+  footer div {
+    gap: 15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

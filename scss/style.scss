@@ -1,0 +1,16 @@
+//Base
+ @import "base/variables";
+@import "base/reset";
+
+//Components
+@import "components/navbar";
+@import "components/main";
+@import "components/footer";
+
+//Layout
+@import "layout/index";
+@import "layout/messi";
+@import "layout/ronaldo";
+@import "layout/estadisticas";
+@import "layout/trofeos";
+@import "layout/mediaqueries";

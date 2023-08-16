@@ -1,0 +1,21 @@
+header {
+    background-color: black;
+}
+nav {
+    padding: 15px 0px;;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 8px;
+    justify-content: center;
+}
+li a {
+    color: white;
+    font-size: 11px;
+    text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
+}
+.last-page ul {
+    padding-right: 35px;
+}
