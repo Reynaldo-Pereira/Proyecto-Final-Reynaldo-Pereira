@@ -2,10 +2,12 @@
     li a {
         font-size: 14px;
     }
-    .titulo-messi h1 , .titulo-ronaldo h2 {
-        font-size: 22px;
+    .title {
+        h1 , h2 {
+            font-size: 22px;
+        }
     }
-    .description p , .card p , .card-body p , .tarjeta p {
+    .description p , .text p , .card p , .card-body p , .tarjeta p {
         font-size: 18px;
     }
     .card-titulo , .card-body-titulo , .tarjeta-titulo {
@@ -21,21 +23,22 @@
 }
 
 @media screen and (min-width:480px) {
-    li a {
-        font-size: 15px;
-    }
     ul {
         gap: 18px;
     }
-    .titulo-messi h1 , .titulo-ronaldo h2 {
-        font-size: 23px;
-        top: 32px;
+    li a {
+        font-size: 15px;
     }
-    .description p , .card p , .card-body p , .tarjeta p {
+    .title {
+        h1 , h2 {
+            font-size: 22px;
+        }
+        img {
+            height: 40px;
+        }
+    }
+    .description p , .text p , .card p , .card-body p , .tarjeta p {
         font-size: 20px;
-    }
-    .titulo-messi img , .titulo-ronaldo img , .title img {
-        height: 40px;
     }
     .card-titulo , .card-body-titulo , .tarjeta-titulo {
         font-size: 30px;
@@ -56,15 +59,16 @@
     ul {
         gap: 20px;
     }
-    .titulo-messi h1 , .titulo-ronaldo h2 {
-        font-size: 27px;
-        top: 40px;
+    .title {
+        h1 , h2 {
+            font-size: 22px;
+        }
+        img {
+            height: 50px;
+        }
     }
-    .description p , .card p , .card-body p , .tarjeta p {
+    .description p , .text p , .card p , .card-body p , .tarjeta p {
         font-size: 22px;
-    }
-    .titulo-messi img , .titulo-ronaldo img , .title img {
-        height: 50px;
     }
     .card-titulo ,.card-body-titulo , .tarjeta-titulo {
         font-size: 35px;
@@ -78,6 +82,7 @@
 }
 
 @media screen and (min-width:768px) {
+    /* Header */
     ul {
         justify-content: end;
     }
@@ -91,57 +96,65 @@
     }
     .messi:hover a {
         background-color: white;
-        color: skyblue;
+        color: $color-messi;
     }
     .ronaldo:hover a {
         background-color: rgb(2, 175, 2);
-        color: red;
+        color: $color-ronaldo;
     }
 
     /* Inicio */
-    .titulo-messi div , .titulo-ronaldo div {
+    .title {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    .titulo-messi h1 , .titulo-ronaldo h2 {
-        font-size: 32px;
-        top: 53px;
-    }
-    .titulo-messi img , .titulo-ronaldo img {
-        width: 70%;
-        height: 70px;
-        border-radius: 30px;
+
+        h1, h2 {
+            font-size: 32px;
+            top: 53px;
+        }
+        img {
+            width: 70%;
+            height: 70px;
+            border-radius: 30px;
+        }
     }
     .description {
         flex-direction: row;
-    }
-    .description p {
-        font-size: 25px;
-    }
-    .description div {
-        padding: 15px;
-        width: 50%;
-    }
-    .description img {
-        height: 100%;
-        object-fit: cover;
+
+        div {
+            padding: 15px;
+            width: 50%; 
+        }
+        p {
+            font-size: 25px;
+        }
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
     }
 
     /* messi y ronaldo */
-    .card-images {
+    .text-images {
         display: flex;
         flex-direction: row;
         gap: 10px;
         padding: 20px;
-    }
-    .card-images img {
-        width: 33%;
+
+        img {
+            width: 33%;
+        }
     }
 
     /* Estadisticas */
+    .card {
+        flex-direction: row;
+        padding: 15px;
+        gap: 20px;
+    }
     .card-body {
-        padding: 40px;
+        padding: 15px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
@@ -150,23 +163,23 @@
         "area1 area2 area3"
         "area4 none area5"
         ;
-        gap: 30px;
+        gap: 20px;
     }
     .cajas , .cajitas {
         background-color: black;
         color: white;
         border-radius: 0%;
         box-shadow: 3px 3px 3px 2px white;
-        transition: 0.5s;
+        transition: 1s;
     }
     .cajas img , .cajitas img {
         border-radius: 0%;
     }
     .cajas:hover {
-        box-shadow: 3px 3px 3px 2px skyblue;
+        box-shadow: 3px 3px 3px 2px $color-messi;
     }
     .cajitas:hover {
-        box-shadow: 3px 3px 3px 2px red;
+        box-shadow: 3px 3px 3px 2px $color-ronaldo;
     }
     .c1 {
         grid-area: area1;
@@ -272,12 +285,13 @@
     }
     footer {
         justify-content: space-around;
-    }
-    footer img {
-        width: 70px;
-        height: 70px;
-    }
-    footer div {
-        gap: 15px;
+
+        div {
+            gap: 15px;
+        }
+        img {
+            width: 70px;
+            height: 70px;
+        }
     }
 }

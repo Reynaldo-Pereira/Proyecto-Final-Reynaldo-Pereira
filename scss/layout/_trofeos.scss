@@ -18,11 +18,10 @@
     border-radius: 100px;
     text-align: center;
 }
-.tarjetita h2 {
-    color:skyblue;
+.tarjetita h2 , .tarjetita-body h4 {
+    color: $color-messi;
     font-size: 18px;
 }
 .tarjetita-body h4 {
-    color: red;
-    font-size: 18px;
+    color: $color-ronaldo;
 }

@@ -1,23 +1,27 @@
-.card-titulo , .card-body-titulo {
+.card-titulo {
     text-align: center;
     padding-top: 20px;
     font-size: 20px;
-    color: skyblue;
- }
- .card-body-titulo {
-    color: red;
- }
- .card-body {
+    color: $color-messi;
+}
+.card-body-titulo {
+   @extend .card-titulo;
+   color: $color-ronaldo;
+}
+.card , .card-body {
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 20px;
- }
- .cajas , .cajitas {
+}
+.cajas , .cajitas {
     text-align: center;
     background-color:white;
     color: black;
     border-radius: 50px;
+}
+.cajas p , .cajitas p {
+    padding: 10px;
 }
 .cajas img , .cajitas img {
     width: 100%;

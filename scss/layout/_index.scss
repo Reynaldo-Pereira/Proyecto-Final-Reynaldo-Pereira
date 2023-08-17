@@ -1,33 +1,34 @@
-.titulo-messi h1 {
-    text-align: center;
-    font-size: 15px;
-    position: relative;
-    top: 25px;
-    color: black;
-    font-family: 'Caprasimo', cursive;
+.title {
+    display: flex;
+    flex-direction: column;
+
+    h1 , h2 {
+        text-align: center;
+        font-size: 15px;
+        position: relative;
+        top: 25px;
+        color: black;
+        font-family: 'Caprasimo', cursive;
+    }
+    h2 {
+        color: white;
+    }
+
+    img {
+        width: 100%;
+        height: 30px;
+    }
 }
-.titulo-messi img , .titulo-ronaldo img {
-    width: 100%;
-    height: 30px;
-}
-.description , .card {
+.description , .text {
     padding-top: 10px;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-.description p , .card p {
+.description p , .text p {
     text-align: center;
 }
-.description img , .card img {
+.description img , .text img {
     width: 100%;
     height: 500px;
-}
-.titulo-ronaldo h2 {
-    text-align: center;
-    font-size: 15px;
-    position: relative;
-    top: 25px;
-    color: black;
-    font-family: 'Caprasimo', cursive;
 }
