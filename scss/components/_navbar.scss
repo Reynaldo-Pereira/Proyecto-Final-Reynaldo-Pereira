@@ -16,6 +16,16 @@ li a {
     text-decoration: none;
     font-family: 'Permanent Marker', cursive;
 }
+.lionel {
+    li a {
+        color: $color-messi
+    }
+}
+.cristiano {
+    li a {
+        color: $color-ronaldo;
+    }
+}
 .last-page ul {
     padding-right: 35px;
 }

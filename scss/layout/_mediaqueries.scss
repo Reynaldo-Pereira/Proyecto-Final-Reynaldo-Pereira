@@ -4,7 +4,8 @@
     }
     .title {
         h1 , h2 {
-            font-size: 22px;
+            font-size: 19px;
+            top: 25px;
         }
     }
     .description p , .text p , .card p , .card-body p , .tarjeta p {
@@ -32,6 +33,7 @@
     .title {
         h1 , h2 {
             font-size: 22px;
+            top: 32px;
         }
         img {
             height: 40px;
@@ -61,7 +63,8 @@
     }
     .title {
         h1 , h2 {
-            font-size: 22px;
+            font-size: 25px;
+            top: 40px;
         }
         img {
             height: 50px;
@@ -100,21 +103,23 @@
     }
     .ronaldo:hover a {
         background-color: rgb(2, 175, 2);
-        color: $color-ronaldo;
+        color: $color-ronaldo
     }
 
     /* Inicio */
     .title {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
+        div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         h1, h2 {
             font-size: 32px;
             top: 53px;
         }
         img {
-            width: 70%;
+            width: 60%;
             height: 70px;
             border-radius: 30px;
         }
@@ -165,22 +170,6 @@
         ;
         gap: 20px;
     }
-    .cajas , .cajitas {
-        background-color: black;
-        color: white;
-        border-radius: 0%;
-        box-shadow: 3px 3px 3px 2px white;
-        transition: 1s;
-    }
-    .cajas img , .cajitas img {
-        border-radius: 0%;
-    }
-    .cajas:hover {
-        box-shadow: 3px 3px 3px 2px $color-messi;
-    }
-    .cajitas:hover {
-        box-shadow: 3px 3px 3px 2px $color-ronaldo;
-    }
     .c1 {
         grid-area: area1;
     }
@@ -200,6 +189,29 @@
         position: relative;
         right: 100px;
     }
+    .cajas , .cajitas {
+        background-color: black;
+        color: white;
+        border-radius: 0%;
+        box-shadow: 3px 3px 3px 2px white;
+        transition: 1s;
+    }
+    .cajas img , .cajitas img {
+        filter: blur(5px);
+        border-radius: 0%;
+        transition: 0.5s;
+    }
+    .cajas:hover {
+            transform: scale(0.9,0.9);
+            box-shadow: 3px 3px 3px 2px $color-messi;
+    }
+    .cajitas:hover {
+        transform: scale(0.9,0.9);
+        box-shadow: 3px 3px 3px 2px $color-ronaldo;
+    }
+    .cajitas:hover img, .cajas:hover img {
+        filter: blur(0px);
+    }
 
     /* Trofeos */
     .tarjeta {
@@ -212,7 +224,7 @@
         "area3 area4"
         "area5 area5"
         ;
-        gap: 20px;
+        gap: 40px;
         padding: 20px;
     }
     .t1 {
@@ -240,7 +252,7 @@
         "area4 area5 area6"
         "area7 area7 area7"
         ;
-        gap: 15px;
+        gap: 25px;
         padding: 20px;
     }
     .b1 {
@@ -272,10 +284,12 @@
         transition: 1s;
     }
     .tarjetita:hover {
-        box-shadow: 3px 0px 3px 2px skyblue;
+        box-shadow: 3px 0px 3px 2px $color-messi;
+        transform: scale(1,1.1);
     }
     .tarjetita-body:hover {
-        box-shadow: 3px 0px 3px 2px red;
+        box-shadow: 3px 0px 3px 2px $color-ronaldo;
+        transform: scale(1,1.1);
     }
     .card-titulo , .card-body-titulo , .tarjeta-titulo {
         font-size: 40px;

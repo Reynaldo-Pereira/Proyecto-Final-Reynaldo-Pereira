@@ -27,6 +27,14 @@ li a {
   font-family: "Permanent Marker", cursive;
 }
 
+.lionel li a {
+  color: skyblue;
+}
+
+.cristiano li a {
+  color: red;
+}
+
 .last-page ul {
   padding-right: 35px;
 }
@@ -65,7 +73,7 @@ footer div {
   text-align: center;
   font-size: 15px;
   position: relative;
-  top: 25px;
+  top: 23px;
   color: black;
   font-family: "Caprasimo", cursive;
 }
@@ -166,7 +174,8 @@ footer div {
     font-size: 14px;
   }
   .title h1, .title h2 {
-    font-size: 22px;
+    font-size: 19px;
+    top: 25px;
   }
   .description p, .text p, .card p, .card-body p, .tarjeta p {
     font-size: 18px;
@@ -191,6 +200,7 @@ footer div {
   }
   .title h1, .title h2 {
     font-size: 22px;
+    top: 32px;
   }
   .title img {
     height: 40px;
@@ -217,7 +227,8 @@ footer div {
     gap: 20px;
   }
   .title h1, .title h2 {
-    font-size: 22px;
+    font-size: 25px;
+    top: 40px;
   }
   .title img {
     height: 50px;
@@ -257,7 +268,8 @@ footer div {
     color: red;
   }
   /* Inicio */
-  .title {
+  .title div {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -267,7 +279,7 @@ footer div {
     top: 53px;
   }
   .title img {
-    width: 70%;
+    width: 60%;
     height: 70px;
     border-radius: 30px;
   }
@@ -309,22 +321,6 @@ footer div {
     grid-template-areas: "area1 area2 area3" "area4 none area5";
     gap: 20px;
   }
-  .cajas, .cajitas {
-    background-color: black;
-    color: white;
-    border-radius: 0%;
-    box-shadow: 3px 3px 3px 2px white;
-    transition: 1s;
-  }
-  .cajas img, .cajitas img {
-    border-radius: 0%;
-  }
-  .cajas:hover {
-    box-shadow: 3px 3px 3px 2px skyblue;
-  }
-  .cajitas:hover {
-    box-shadow: 3px 3px 3px 2px red;
-  }
   .c1 {
     grid-area: area1;
   }
@@ -344,13 +340,36 @@ footer div {
     position: relative;
     right: 100px;
   }
+  .cajas, .cajitas {
+    background-color: black;
+    color: white;
+    border-radius: 0%;
+    box-shadow: 3px 3px 3px 2px white;
+    transition: 1s;
+  }
+  .cajas img, .cajitas img {
+    filter: blur(5px);
+    border-radius: 0%;
+    transition: 0.5s;
+  }
+  .cajas:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 3px 3px 3px 2px skyblue;
+  }
+  .cajitas:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 3px 3px 3px 2px red;
+  }
+  .cajitas:hover img, .cajas:hover img {
+    filter: blur(0px);
+  }
   /* Trofeos */
   .tarjeta {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-template-areas: "area1 area2" "area3 area4" "area5 area5";
-    gap: 20px;
+    gap: 40px;
     padding: 20px;
   }
   .t1 {
@@ -373,7 +392,7 @@ footer div {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-template-areas: "area1 area2 area3" "area4 area5 area6" "area7 area7 area7";
-    gap: 15px;
+    gap: 25px;
     padding: 20px;
   }
   .b1 {
@@ -406,9 +425,11 @@ footer div {
   }
   .tarjetita:hover {
     box-shadow: 3px 0px 3px 2px skyblue;
+    transform: scale(1, 1.1);
   }
   .tarjetita-body:hover {
     box-shadow: 3px 0px 3px 2px red;
+    transform: scale(1, 1.1);
   }
   .card-titulo, .card-body-titulo, .tarjeta-titulo {
     font-size: 40px;
