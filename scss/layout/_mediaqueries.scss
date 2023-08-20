@@ -129,18 +129,21 @@
 
         div {
             padding: 15px;
-            width: 50%; 
+            width: 50%;
         }
         p {
             font-size: 25px;
         }
         img {
             height: 100%;
-            object-fit: cover;
         }
     }
-
     /* messi y ronaldo */
+    .text {
+        img {
+            height: 550px;
+        }
+    }
     .text-images {
         display: flex;
         flex-direction: row;
