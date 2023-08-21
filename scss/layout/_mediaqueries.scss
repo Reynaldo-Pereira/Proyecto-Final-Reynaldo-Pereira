@@ -157,9 +157,28 @@
 
     /* Estadisticas */
     .card {
-        flex-direction: row;
-        padding: 15px;
-        gap: 20px;
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);
+         grid-template-rows: auto;
+         grid-template-areas: 
+         
+         "area1 area1 area2 area2"
+         "area3 area3 area4 area4"
+         ;
+         gap: 40px;
+         padding: 20px;
+        }
+    .j1 {
+        grid-area: area1;
+    }
+    .j2 {
+        grid-area: area2;
+    }
+    .j3 {
+        grid-area: area3;
+    }
+    .j4 {
+        grid-area: area4;
     }
     .card-body {
         padding: 15px;
@@ -169,7 +188,7 @@
         grid-template-areas: 
         
         "area1 area2 area3"
-        "area4 none area5"
+        "area4 area5 area6"
         ;
         gap: 20px;
     }
@@ -184,13 +203,12 @@
     }
     .c4 {
         grid-area: area4;
-        position: relative;
-        left: 100px;
     }
     .c5 {
         grid-area: area5;
-        position: relative;
-        right: 100px;
+    }
+    .c6 {
+        grid-area: area6;
     }
     .cajas , .cajitas {
         background-color: black;
@@ -226,6 +244,7 @@
         "area1 area2"
         "area3 area4"
         "area5 area5"
+        "area6 area6"
         ;
         gap: 40px;
         padding: 20px;
@@ -245,6 +264,14 @@
     .t5 {
         grid-area: area5;
     }
+    .t6 {
+        grid-area: area6;
+        transition: 1s;
+
+        &:hover {
+            transform: scale(0.8,0.8);
+        }
+    }
     .tarjeta-body {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -254,6 +281,7 @@
         "area1 area2 area3"
         "area4 area5 area6"
         "area7 area7 area7"
+        "area8 area8 area8"
         ;
         gap: 25px;
         padding: 20px;
@@ -278,6 +306,15 @@
     }
     .b7 {
         grid-area: area7;
+    }
+    .b8 {
+        grid-area: area8;
+
+        transition: 1s;
+
+        &:hover {
+            transform: scale(0.8,0.8);
+        }
     }
     .tarjetita , .tarjetita-body {
         background-color: black;
