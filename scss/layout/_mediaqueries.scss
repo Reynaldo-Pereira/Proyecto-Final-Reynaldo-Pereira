@@ -97,14 +97,6 @@
     color: black;
     border-radius: 20px;
     }
-    .messi:hover a {
-        background-color: white;
-        color: $color-messi;
-    }
-    .ronaldo:hover a {
-        background-color: rgb(2, 175, 2);
-        color: $color-ronaldo
-    }
 
     /* Inicio */
     .title {
@@ -266,11 +258,6 @@
     }
     .t6 {
         grid-area: area6;
-        transition: 1s;
-
-        &:hover {
-            transform: scale(0.8,0.8);
-        }
     }
     .tarjeta-body {
         display: grid;
@@ -309,12 +296,6 @@
     }
     .b8 {
         grid-area: area8;
-
-        transition: 1s;
-
-        &:hover {
-            transform: scale(0.8,0.8);
-        }
     }
     .tarjetita , .tarjetita-body {
         background-color: black;
