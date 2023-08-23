@@ -98,6 +98,11 @@
     border-radius: 20px;
     }
 
+    /* Main */
+    main {
+        font-family: 'Roboto Slab', serif;
+    }
+
     /* Inicio */
     .title {
         div {
@@ -124,7 +129,7 @@
             width: 50%;
         }
         p {
-            font-size: 25px;
+            font-size: 30px;
         }
         img {
             height: 100%;
@@ -302,7 +307,7 @@
         color: white;
         box-shadow: 3px 0px 3px 2px white;
         border-radius: 0%;
-        transition: 1s;
+        transition: 0.5s;
     }
     .tarjetita:hover {
         box-shadow: 3px 0px 3px 2px $color-messi;

@@ -10,9 +10,6 @@
         color: black;
         font-family: 'Caprasimo', cursive;
     }
-    h2 {
-        color: white;
-    }
 
     img {
         width: 100%;
@@ -20,10 +17,8 @@
     }
 }
 .description , .text {
+    @include flex(column, 15px);
     padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
 }
 .description p , .text p {
     text-align: center;
