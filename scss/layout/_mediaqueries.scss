@@ -8,7 +8,7 @@
             top: 25px;
         }
     }
-    .description p , .text p , .card p , .card-body p , .tarjeta p {
+    .description p , .text p , .card p , .card-body p , .tarjeta li , .tarjeta-body li {
         font-size: 18px;
     }
     .card-titulo , .card-body-titulo , .tarjeta-titulo {
@@ -44,6 +44,12 @@
     }
     .card-titulo , .card-body-titulo , .tarjeta-titulo {
         font-size: 30px;
+    }
+    li {
+        font-size: 20px;
+    }
+    .tarjetita ul ,  .tarjetita-body ul {
+        gap: 6px;
     }
     .tarjetita h2 , .tarjetita-body h4 {
         font-size: 27px;
@@ -100,7 +106,7 @@
 
     /* Main */
     main {
-        font-family: 'Roboto Slab', serif;
+        font-family: 'Playfair Display', serif;
     }
 
     /* Inicio */
@@ -210,7 +216,7 @@
     .cajas , .cajitas {
         background-color: black;
         color: white;
-        border-radius: 0%;
+        border: none;
         box-shadow: 3px 3px 3px 2px white;
         transition: 1s;
     }
@@ -232,7 +238,7 @@
     }
 
     /* Trofeos */
-    .tarjeta {
+    .tarjeta { 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
@@ -244,22 +250,79 @@
         "area6 area6"
         ;
         gap: 40px;
-        padding: 20px;
+        padding: 50px;
     }
     .t1 {
         grid-area: area1;
+        transition: 0.5s;
+
+        &:hover {
+            background-image: linear-gradient(white, skyblue);
+            color: black;
+            box-shadow: 3px 0px 3px 2px $color-messi;
+            h2 {
+                transition: 0.5s;
+                color: black
+            }
+        }
     }
     .t2 {
         grid-area: area2;
+
+        &:hover {
+            background-image: linear-gradient(brown, rgb(1, 1, 138));
+            h2 {
+                transition: 0.5s;
+                color: white
+            }
+        }
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 5px;
+        }
     }
     .t3 {
         grid-area: area3;
+
+        &:hover {
+            background-image: linear-gradient( to left, blue, white, red, white, blue);
+            color: black;
+            h2 {
+                transition: 0.5s;
+                color: black
+            }
+        }
     }
     .t4 {
         grid-area: area4;
+
+        &:hover {
+            background-image: linear-gradient( white, rgb(247, 138, 156));
+            color: black;
+            h2 {
+                transition: 0.5s;
+                color: black
+            }
+        }
     }
     .t5 {
         grid-area: area5;
+
+        &:hover {
+            background-image: radial-gradient(white, gold, white);
+            color: black;
+            h2 {
+                transition: 0.5s;
+                color: black
+            }
+        }
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
     .t6 {
         grid-area: area6;
@@ -303,19 +366,16 @@
         grid-area: area8;
     }
     .tarjetita , .tarjetita-body {
-        background-color: black;
-        color: white;
+        border: none;
         box-shadow: 3px 0px 3px 2px white;
-        border-radius: 0%;
         transition: 0.5s;
     }
     .tarjetita:hover {
-        box-shadow: 3px 0px 3px 2px $color-messi;
-        transform: scale(1,1.1);
+        transform: scale(1.1,1.1);
     }
     .tarjetita-body:hover {
         box-shadow: 3px 0px 3px 2px $color-ronaldo;
-        transform: scale(1,1.1);
+        transform: scale(1.1,1.1);
     }
     .card-titulo , .card-body-titulo , .tarjeta-titulo {
         font-size: 40px;

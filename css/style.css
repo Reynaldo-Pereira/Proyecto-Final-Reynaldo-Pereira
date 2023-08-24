@@ -114,15 +114,16 @@ footer div {
 .card, .card-body {
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
   gap: 20px;
 }
 
 .cajas, .cajitas {
+  width: 90%;
   text-align: center;
-  background-color: white;
-  color: black;
-  border-radius: 50px;
+  color: white;
+  border: 2px solid white;
 }
 
 .cajas p, .cajitas p {
@@ -132,7 +133,6 @@ footer div {
 .cajas img, .cajitas img {
   width: 100%;
   height: 500px;
-  border-radius: 40px;
   object-fit: cover;
 }
 
@@ -145,6 +145,7 @@ footer div {
 .tarjeta, .tarjeta-body {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
 }
 
@@ -155,14 +156,22 @@ footer div {
 }
 
 .tarjetita, .tarjetita-body {
-  background-color: white;
-  color: black;
-  gap: 10px;
-  border-radius: 100px;
+  width: 99%;
+  color: white;
+  gap: 5px;
   text-align: center;
+  border: 2px solid white;
+}
+
+.tarjetita ul, .tarjetita-body ul {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 .tarjetita h2, .tarjetita-body h4 {
+  padding-top: 10px;
   color: skyblue;
   font-size: 18px;
 }
@@ -179,7 +188,7 @@ footer div {
     font-size: 19px;
     top: 25px;
   }
-  .description p, .text p, .card p, .card-body p, .tarjeta p {
+  .description p, .text p, .card p, .card-body p, .tarjeta li, .tarjeta-body li {
     font-size: 18px;
   }
   .card-titulo, .card-body-titulo, .tarjeta-titulo {
@@ -212,6 +221,12 @@ footer div {
   }
   .card-titulo, .card-body-titulo, .tarjeta-titulo {
     font-size: 30px;
+  }
+  li {
+    font-size: 20px;
+  }
+  .tarjetita ul, .tarjetita-body ul {
+    gap: 6px;
   }
   .tarjetita h2, .tarjetita-body h4 {
     font-size: 27px;
@@ -263,7 +278,7 @@ footer div {
   }
   /* Main */
   main {
-    font-family: "Roboto Slab", serif;
+    font-family: "Playfair Display", serif;
   }
   /* Inicio */
   .title div {
@@ -357,7 +372,7 @@ footer div {
   .cajas, .cajitas {
     background-color: black;
     color: white;
-    border-radius: 0%;
+    border: none;
     box-shadow: 3px 3px 3px 2px white;
     transition: 1s;
   }
@@ -384,22 +399,72 @@ footer div {
     grid-template-rows: auto;
     grid-template-areas: "area1 area2" "area3 area4" "area5 area5" "area6 area6";
     gap: 40px;
-    padding: 20px;
+    padding: 50px;
   }
   .t1 {
     grid-area: area1;
+    transition: 0.5s;
+  }
+  .t1:hover {
+    background-image: linear-gradient(white, skyblue);
+    color: black;
+    box-shadow: 3px 0px 3px 2px skyblue;
+  }
+  .t1:hover h2 {
+    transition: 0.5s;
+    color: black;
   }
   .t2 {
     grid-area: area2;
   }
+  .t2:hover {
+    background-image: linear-gradient(brown, rgb(1, 1, 138));
+  }
+  .t2:hover h2 {
+    transition: 0.5s;
+    color: white;
+  }
+  .t2 ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5px;
+  }
   .t3 {
     grid-area: area3;
+  }
+  .t3:hover {
+    background-image: linear-gradient(to left, blue, white, red, white, blue);
+    color: black;
+  }
+  .t3:hover h2 {
+    transition: 0.5s;
+    color: black;
   }
   .t4 {
     grid-area: area4;
   }
+  .t4:hover {
+    background-image: linear-gradient(white, rgb(247, 138, 156));
+    color: black;
+  }
+  .t4:hover h2 {
+    transition: 0.5s;
+    color: black;
+  }
   .t5 {
     grid-area: area5;
+  }
+  .t5:hover {
+    background-image: radial-gradient(white, gold, white);
+    color: black;
+  }
+  .t5:hover h2 {
+    transition: 0.5s;
+    color: black;
+  }
+  .t5 ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
   .t6 {
     grid-area: area6;
@@ -437,19 +502,16 @@ footer div {
     grid-area: area8;
   }
   .tarjetita, .tarjetita-body {
-    background-color: black;
-    color: white;
+    border: none;
     box-shadow: 3px 0px 3px 2px white;
-    border-radius: 0%;
     transition: 0.5s;
   }
   .tarjetita:hover {
-    box-shadow: 3px 0px 3px 2px skyblue;
-    transform: scale(1, 1.1);
+    transform: scale(1.1, 1.1);
   }
   .tarjetita-body:hover {
     box-shadow: 3px 0px 3px 2px red;
-    transform: scale(1, 1.1);
+    transform: scale(1.1, 1.1);
   }
   .card-titulo, .card-body-titulo, .tarjeta-titulo {
     font-size: 40px;
