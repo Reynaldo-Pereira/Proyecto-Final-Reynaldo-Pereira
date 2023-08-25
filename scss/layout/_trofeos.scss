@@ -4,34 +4,54 @@
     padding-top: 10px;
 }
 .tarjeta , .tarjeta-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    @include flex(column, 10px)
 }
 .tarjeta img , .tarjeta-body img {
     width: 100%;
     height: 500px;
     object-fit: cover;
 }
-.tarjetita , .tarjetita-body {
-    width: 99%;
-    color: white;
-    gap: 5px;
-    text-align: center;
-    border: 2px solid white;
-}
 .tarjetita ul , .tarjetita-body ul {
-    padding: 0px;
+    padding-left: 5px;
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: start;
 }
 .tarjetita h2 , .tarjetita-body h4 {
-    padding-top: 10px;
-    color: $color-messi;
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px 0px 0px 5px;
     font-size: 18px;
 }
 .tarjetita-body h4 {
     color: $color-ronaldo;
+}
+.t1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px 15px;
+
+    div {
+        height: 25px;
+        display: flex;
+        justify-content: space-between;
+
+        div {
+            background-image: linear-gradient(white, skyblue);
+            width: 150px;
+            
+            p {
+                padding-left: 5px;
+                color: black;
+            }
+        }
+    }
+}
+.quantity {
+    text-align: center;
+    background-color: white;
+    color: black;
+    width: 30px;
+    height: 25px;
 }
