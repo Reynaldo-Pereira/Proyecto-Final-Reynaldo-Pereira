@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Pacifico&family=Permanent+Marker&family=Playfair+Display:wght@500&family=Roboto+Slab:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Caprasimo&family=Pacifico&family=Permanent+Marker&family=Playfair+Display:wght@500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -42,7 +42,7 @@ li a {
 main {
   background-color: black;
   color: white;
-  font-family: "Playfair Display", serif;
+  font-family: "ADLaM Display", cursive;
   padding-bottom: 10px;
 }
 
@@ -136,13 +136,18 @@ footer div {
   object-fit: cover;
 }
 
-.tarjeta-titulo {
+.tarjeta-titulo, .tarjeta-body-titulo {
   font-family: "Pacifico", cursive;
   text-align: center;
   padding-top: 10px;
+  color: skyblue;
 }
 
-.tarjeta, .tarjeta-body {
+.tarjeta-body-titulo {
+  color: red;
+}
+
+.tarjeta, .tarjeta-body, .tarjetita, .tarjetita-body {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -154,22 +159,10 @@ footer div {
   object-fit: cover;
 }
 
-.tarjetita ul, .tarjetita-body ul {
-  padding-left: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-
 .tarjetita h2, .tarjetita-body h4 {
   text-align: center;
-  text-decoration: underline;
   padding: 10px 0px 0px 5px;
   font-size: 18px;
-}
-
-.tarjetita-body h4 {
-  color: red;
 }
 
 .t1 {
@@ -185,19 +178,240 @@ footer div {
 }
 .t1 div div {
   background-image: linear-gradient(white, skyblue);
-  width: 150px;
+  width: 210px;
 }
 .t1 div div p {
   padding-left: 5px;
   color: black;
 }
 
+.t2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 15px;
+}
+.t2 div {
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.t2 div div {
+  background-image: linear-gradient(brown, rgb(1, 1, 138));
+  width: 210px;
+}
+.t2 div div p {
+  padding-left: 5px;
+  color: white;
+}
+
+.t3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 15px;
+}
+.t3 div {
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.t3 div div {
+  background-image: linear-gradient(to left, blue, white, red, white, blue);
+  width: 210px;
+}
+.t3 div div p {
+  padding-left: 5px;
+  color: black;
+}
+
+.t4 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 15px;
+}
+.t4 div {
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.t4 div div {
+  background-image: linear-gradient(white, rgb(247, 138, 156));
+  width: 210px;
+}
+.t4 div div p {
+  padding-left: 5px;
+  color: black;
+}
+
+.t5 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 15px;
+}
+.t5 div {
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.t5 div div {
+  background-image: linear-gradient(white, gold, white);
+  width: 210px;
+}
+.t5 div div p {
+  padding-left: 5px;
+  color: black;
+}
+
+.b1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 15px;
+}
+.b1 div {
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.b1 div div {
+  background-image: linear-gradient(to right, green, brown);
+  width: 210px;
+}
+.b1 div div p {
+  padding-left: 5px;
+  color: white;
+}
+
+.b2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 15px;
+}
+.b2 div {
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.b2 div div {
+  background-image: linear-gradient(white, green, white);
+  width: 210px;
+}
+.b2 div div p {
+  padding-left: 5px;
+  color: black;
+}
+
+.b3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 15px;
+}
+.b3 div {
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.b3 div div {
+  background-image: linear-gradient(red, white);
+  width: 210px;
+}
+.b3 div div p {
+  padding-left: 5px;
+  color: black;
+}
+
+.b4 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 15px;
+}
+.b4 div {
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.b4 div div {
+  background-image: linear-gradient(white, rgb(245, 229, 142));
+  width: 210px;
+}
+.b4 div div p {
+  padding-left: 5px;
+  color: black;
+}
+
+.b5 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 15px;
+}
+.b5 div {
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.b5 div div {
+  background-image: radial-gradient(white, black);
+  width: 210px;
+}
+.b5 div div p {
+  padding-left: 5px;
+  color: black;
+}
+
+.b6 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 15px;
+}
+.b6 div {
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.b6 div div {
+  background-image: linear-gradient(yellow, blue);
+  width: 210px;
+}
+.b6 div div p {
+  padding-left: 5px;
+  color: black;
+}
+
+.b7 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 15px;
+}
+.b7 div {
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.b7 div div {
+  background-image: linear-gradient(white, gold, white);
+  width: 210px;
+}
+.b7 div div p {
+  padding-left: 5px;
+  color: black;
+}
+
 .quantity {
   text-align: center;
-  background-color: white;
+  background-image: radial-gradient(white, white, black);
   color: black;
   width: 30px;
   height: 25px;
+  border-radius: 30px;
 }
 
 @media screen and (min-width: 430px) {
@@ -208,14 +422,24 @@ footer div {
     font-size: 19px;
     top: 25px;
   }
-  .description p, .text p, .card p, .card-body p, .tarjeta li, .tarjeta-body li {
+  .description p, .text p, .card p, .card-body p, .tarjeta p, .tarjeta-body p, .quantity {
     font-size: 18px;
   }
-  .card-titulo, .card-body-titulo, .tarjeta-titulo {
+  .card-titulo, .card-body-titulo, .tarjeta-titulo, .tarjeta-body-titulo {
     font-size: 25px;
   }
   .tarjetita h2, .tarjetita-body h4 {
     font-size: 22px;
+  }
+  .tarjetita div, .tarjetita-body div {
+    height: 30px;
+  }
+  .tarjetita div div, .tarjetita-body div div {
+    width: 320px;
+  }
+  .quantity {
+    width: 35px;
+    height: 30px;
   }
   footer img {
     width: 45px;
@@ -236,20 +460,24 @@ footer div {
   .title img {
     height: 40px;
   }
-  .description p, .text p, .card p, .card-body p, .tarjeta p {
+  .description p, .text p, .card p, .card-body p, .tarjeta p, .tarjeta-body p, .quantity {
     font-size: 20px;
   }
-  .card-titulo, .card-body-titulo, .tarjeta-titulo {
+  .card-titulo, .card-body-titulo, .tarjeta-titulo, .tarjeta-body-titulo {
     font-size: 30px;
-  }
-  li {
-    font-size: 20px;
-  }
-  .tarjetita ul, .tarjetita-body ul {
-    gap: 6px;
   }
   .tarjetita h2, .tarjetita-body h4 {
     font-size: 27px;
+  }
+  .tarjetita div, .tarjetita-body div {
+    height: 32px;
+  }
+  .tarjetita div div, .tarjetita-body div div {
+    width: 380px;
+  }
+  .quantity {
+    width: 37px;
+    height: 32px;
   }
   footer img {
     width: 55px;
@@ -270,20 +498,173 @@ footer div {
   .title img {
     height: 50px;
   }
-  .description p, .text p, .card p, .card-body p, .tarjeta p {
+  .description p, .text p, .card p, .card-body p, .tarjeta p, .tarjeta-body p, .quantity {
     font-size: 22px;
   }
-  .card-titulo, .card-body-titulo, .tarjeta-titulo {
+  .card-titulo, .card-body-titulo, .tarjeta-titulo, .tarjeta-body-titulo {
     font-size: 35px;
   }
   .tarjetita h2, .tarjetita-body h4 {
     font-size: 31px;
   }
+  .tarjetita div, .tarjetita-body div {
+    height: 35px;
+  }
+  .tarjetita div div, .tarjetita-body div div {
+    width: 480px;
+  }
+  .quantity {
+    width: 40px;
+    height: 35px;
+  }
   footer div {
     gap: 10px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 880px) {
+  /* Header */
+  ul {
+    justify-content: end;
+  }
+  li a {
+    font-size: 25px;
+  }
+  /* Inicio */
+  .title div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title h1, .title h2 {
+    font-size: 32px;
+    top: 53px;
+  }
+  .title img {
+    width: 60%;
+    height: 70px;
+    border-radius: 30px;
+  }
+  .description {
+    flex-direction: row;
+  }
+  .description div {
+    padding: 15px;
+    width: 50%;
+  }
+  .description p {
+    font-size: 30px;
+  }
+  .description img {
+    height: 100%;
+  }
+  /* messi y ronaldo */
+  .text p {
+    font-size: 30px;
+  }
+  .text img {
+    height: 550px;
+  }
+  .text-images {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px;
+  }
+  .text-images img {
+    width: 33%;
+  }
+  /* Estadisticas */
+  .card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "area1 area1 area2 area2" "area3 area3 area4 area4";
+    gap: 40px;
+    padding: 20px;
+  }
+  .card p {
+    font-size: 30px;
+  }
+  .j1 {
+    grid-area: area1;
+  }
+  .j2 {
+    grid-area: area2;
+  }
+  .j3 {
+    grid-area: area3;
+  }
+  .j4 {
+    grid-area: area4;
+  }
+  .card-body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "area1 area1 area2 area2" "area3 area3 area4 area4" "area5 area5 area6 area6";
+    gap: 20px;
+    padding: 15px;
+  }
+  .card-body p {
+    font-size: 30px;
+  }
+  .c1 {
+    grid-area: area1;
+  }
+  .c2 {
+    grid-area: area2;
+  }
+  .c3 {
+    grid-area: area3;
+  }
+  .c4 {
+    grid-area: area4;
+  }
+  .c5 {
+    grid-area: area5;
+  }
+  .c6 {
+    grid-area: area6;
+  }
+  .cajas, .cajitas {
+    background-color: black;
+    color: white;
+    border: none;
+    box-shadow: 3px 3px 3px 2px white;
+  }
+  /* Trofeos */
+  .tarjetita div, .tarjetita-body div {
+    height: 40px;
+  }
+  .tarjetita div div, .tarjetita-body div div {
+    width: 700px;
+  }
+  .quantity {
+    width: 45px;
+    height: 40px;
+  }
+  .card-titulo, .card-body-titulo, .tarjeta-titulo, .tarjeta-body-titulo {
+    font-size: 40px;
+  }
+  .tarjeta p, .tarjeta-body p {
+    font-size: 30px;
+  }
+  .tarjetita h2, .tarjetita-body h4 {
+    font-size: 35px;
+  }
+  footer {
+    justify-content: space-around;
+  }
+  footer div {
+    gap: 15px;
+  }
+  footer img {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media screen and (min-width: 1200px) {
   /* Header */
   ul {
     justify-content: end;
@@ -308,8 +689,8 @@ footer div {
     align-items: center;
   }
   .title h1, .title h2 {
-    font-size: 32px;
-    top: 53px;
+    font-size: 35px;
+    top: 55px;
   }
   .title img {
     width: 60%;
@@ -364,12 +745,12 @@ footer div {
     grid-area: area4;
   }
   .card-body {
-    padding: 15px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-    grid-template-areas: "area1 area2 area3" "area4 area5 area6";
+    grid-template-areas: "area1 area1 area2 area2" "area3 area3 area4 area4" "area5 area5 area6 area6";
     gap: 20px;
+    padding: 15px;
   }
   .c1 {
     grid-area: area1;
@@ -418,20 +799,18 @@ footer div {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-template-areas: "area1 area2" "area3 area4" "area5 area5" "area6 area6";
-    gap: 40px;
-    padding: 50px;
+    gap: 20px;
+    padding: 25px;
   }
   .t1 {
     grid-area: area1;
-    transition: 0.5s;
   }
   .t1:hover {
     background-image: linear-gradient(white, skyblue);
     color: black;
     box-shadow: 3px 0px 3px 2px skyblue;
   }
-  .t1:hover h2 {
-    transition: 0.5s;
+  .t1:hover p {
     color: black;
   }
   .t2 {
@@ -440,15 +819,6 @@ footer div {
   .t2:hover {
     background-image: linear-gradient(brown, rgb(1, 1, 138));
   }
-  .t2:hover h2 {
-    transition: 0.5s;
-    color: white;
-  }
-  .t2 ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 5px;
-  }
   .t3 {
     grid-area: area3;
   }
@@ -456,8 +826,7 @@ footer div {
     background-image: linear-gradient(to left, blue, white, red, white, blue);
     color: black;
   }
-  .t3:hover h2 {
-    transition: 0.5s;
+  .t3:hover p {
     color: black;
   }
   .t4 {
@@ -467,8 +836,7 @@ footer div {
     background-image: linear-gradient(white, rgb(247, 138, 156));
     color: black;
   }
-  .t4:hover h2 {
-    transition: 0.5s;
+  .t4:hover p {
     color: black;
   }
   .t5 {
@@ -478,65 +846,129 @@ footer div {
     background-image: radial-gradient(white, gold, white);
     color: black;
   }
-  .t5:hover h2 {
-    transition: 0.5s;
+  .t5:hover p {
     color: black;
-  }
-  .t5 ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
   }
   .t6 {
     grid-area: area6;
   }
   .tarjeta-body {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    grid-template-areas: "area1 area2 area3" "area4 area5 area6" "area7 area7 area7" "area8 area8 area8";
-    gap: 25px;
-    padding: 20px;
+    grid-template-areas: "area1 area2" "area3 area4" "area5 area6" "area7 area7" "area8 area8";
+    gap: 20px;
+    padding: 25px;
   }
   .b1 {
     grid-area: area1;
   }
+  .b1:hover {
+    background-image: linear-gradient(to right, green, brown);
+    color: white;
+  }
+  .b1:hover p {
+    color: white;
+  }
   .b2 {
     grid-area: area2;
+  }
+  .b2:hover {
+    background-image: linear-gradient(white, green, white);
+    color: black;
+  }
+  .b2:hover p {
+    color: black;
   }
   .b3 {
     grid-area: area3;
   }
+  .b3:hover {
+    background-image: linear-gradient(red, white);
+    color: black;
+  }
+  .b3:hover p {
+    color: black;
+  }
   .b4 {
     grid-area: area4;
+  }
+  .b4:hover {
+    background-image: radial-gradient(white, rgb(252, 234, 133));
+    color: black;
+  }
+  .b4:hover p {
+    color: black;
   }
   .b5 {
     grid-area: area5;
   }
+  .b5:hover {
+    background-image: radial-gradient(white, black);
+    color: black;
+  }
+  .b5:hover p {
+    color: black;
+  }
   .b6 {
     grid-area: area6;
   }
+  .b6:hover {
+    background-image: linear-gradient(yellow, blue);
+    color: black;
+  }
+  .b6:hover p {
+    color: black;
+  }
   .b7 {
     grid-area: area7;
+  }
+  .b7:hover {
+    background-image: radial-gradient(white, gold, white);
+    color: black;
+  }
+  .b7:hover p {
+    color: black;
   }
   .b8 {
     grid-area: area8;
   }
   .tarjetita, .tarjetita-body {
+    padding: 10px;
     box-shadow: 3px 0px 3px 2px white;
-    transition: 0.5s;
+    transition: 0.7s;
+    height: auto;
+  }
+  .tarjetita div, .tarjetita-body div {
+    justify-content: center;
+    text-align: center;
+  }
+  .tarjetita div div, .tarjetita-body div div {
+    padding-left: 35px;
+    width: 60%;
+    background-image: none;
+  }
+  .tarjetita div div p, .tarjetita-body div div p {
+    transition: 0.7s;
+    color: white;
+  }
+  .quantity {
+    background-image: none;
+    color: white;
+    transition: 0.7s;
   }
   .tarjetita:hover {
-    transform: scale(1.1, 1.1);
+    transform: scale(0.9, 0.9);
   }
   .tarjetita-body:hover {
-    box-shadow: 3px 0px 3px 2px red;
-    transform: scale(1.1, 1.1);
+    transform: scale(0.9, 0.9);
   }
-  .card-titulo, .card-body-titulo, .tarjeta-titulo {
-    font-size: 40px;
+  .card-titulo, .card-body-titulo, .tarjeta-titulo, .tarjeta-body-titulo {
+    font-size: 45px;
   }
   .tarjetita h2, .tarjetita-body h4 {
-    font-size: 35px;
+    text-decoration: underline;
+    font-size: 40px;
   }
   footer {
     justify-content: space-around;

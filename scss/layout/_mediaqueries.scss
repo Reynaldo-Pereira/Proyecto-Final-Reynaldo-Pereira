@@ -8,14 +8,27 @@
             top: 25px;
         }
     }
-    .description p , .text p , .card p , .card-body p , .tarjeta li , .tarjeta-body li {
+    .description p , .text p , .card p , .card-body p , .tarjeta p , .tarjeta-body p , .quantity {
         font-size: 18px;
     }
-    .card-titulo , .card-body-titulo , .tarjeta-titulo {
+    .card-titulo , .card-body-titulo , .tarjeta-titulo , .tarjeta-body-titulo {
         font-size: 25px;
     }
     .tarjetita h2 , .tarjetita-body h4 {
         font-size: 22px;
+    }
+    .tarjetita , .tarjetita-body {
+        div {
+            height: 30px;
+
+            div {
+                width: 320px;
+            }
+        }
+    }
+    .quantity {
+        width: 35px;
+        height: 30px;
     }
     footer img {
         width: 45px;
@@ -39,20 +52,27 @@
             height: 40px;
         }
     }
-    .description p , .text p , .card p , .card-body p , .tarjeta p {
+    .description p , .text p , .card p , .card-body p , .tarjeta p , .tarjeta-body p , .quantity {
         font-size: 20px;
     }
-    .card-titulo , .card-body-titulo , .tarjeta-titulo {
+    .card-titulo , .card-body-titulo , .tarjeta-titulo , .tarjeta-body-titulo {
         font-size: 30px;
-    }
-    li {
-        font-size: 20px;
-    }
-    .tarjetita ul ,  .tarjetita-body ul {
-        gap: 6px;
     }
     .tarjetita h2 , .tarjetita-body h4 {
         font-size: 27px;
+    }
+    .tarjetita , .tarjetita-body {
+        div {
+            height: 32px;
+
+            div {
+                width: 380px;
+            }
+        }
+    }
+    .quantity {
+        width: 37px;
+        height: 32px;
     }
     footer img {
         width: 55px;
@@ -76,21 +96,202 @@
             height: 50px;
         }
     }
-    .description p , .text p , .card p , .card-body p , .tarjeta p {
+    .description p , .text p , .card p , .card-body p , .tarjeta p , .tarjeta-body p , .quantity {
         font-size: 22px;
     }
-    .card-titulo ,.card-body-titulo , .tarjeta-titulo {
+    .card-titulo ,.card-body-titulo , .tarjeta-titulo , .tarjeta-body-titulo {
         font-size: 35px;
     }
     .tarjetita h2 , .tarjetita-body h4 {
         font-size: 31px;
+    }
+    .tarjetita ,  .tarjetita-body {
+        div {
+            height: 35px;
+
+            div {
+                width: 480px;
+            }
+        }
+    }
+    .quantity {
+        width: 40px;
+        height: 35px;
     }
     footer div {
         gap: 10px;
     }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:880px) {
+    /* Header */
+    ul {
+        justify-content: end;
+    }
+    li a {
+    font-size: 25px;
+    }
+
+    /* Inicio */
+    .title {
+        div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1, h2 {
+            font-size: 32px;
+            top: 53px;
+        }
+        img {
+            width: 60%;
+            height: 70px;
+            border-radius: 30px;
+        }
+    }
+    .description {
+        flex-direction: row;
+
+        div {
+            padding: 15px;
+            width: 50%;
+        }
+        p {
+            font-size: 30px;
+        }
+        img {
+            height: 100%;
+        }
+    }
+    /* messi y ronaldo */
+    .text {
+        p {
+            font-size: 30px;
+        }
+        img {
+            height: 550px;
+        }
+    }
+    .text-images {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding: 20px;
+
+        img {
+            width: 33%;
+        }
+    }
+
+    /* Estadisticas */
+    .card {
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);
+         grid-template-rows: auto;
+         grid-template-areas: 
+         
+         "area1 area1 area2 area2"
+         "area3 area3 area4 area4"
+         ;
+         gap: 40px;
+         padding: 20px;
+
+         p {
+            font-size: 30px;
+         }
+        }
+    .j1 {
+        grid-area: area1;
+    }
+    .j2 {
+        grid-area: area2;
+    }
+    .j3 {
+        grid-area: area3;
+    }
+    .j4 {
+        grid-area: area4;
+    }
+    .card-body {
+        display: grid;
+         grid-template-columns: repeat(4, 1fr);
+         grid-template-rows: auto;
+        grid-template-areas: 
+        
+        "area1 area1 area2 area2"
+        "area3 area3 area4 area4"
+        "area5 area5 area6 area6"
+        ;
+        gap: 20px;
+        padding: 15px;
+
+        p {
+            font-size: 30px;
+        }
+    }
+    .c1 {
+        grid-area: area1;
+    }
+    .c2 {
+        grid-area: area2;
+    }
+    .c3 {
+        grid-area: area3;
+    }
+    .c4 {
+        grid-area: area4;
+    }
+    .c5 {
+        grid-area: area5;
+    }
+    .c6 {
+        grid-area: area6;
+    }
+    .cajas , .cajitas {
+        background-color: black;
+        color: white;
+        border: none;
+        box-shadow: 3px 3px 3px 2px white;
+    }
+
+    /* Trofeos */
+    .tarjetita ,  .tarjetita-body {
+        div {
+            height: 40px;
+
+            div {
+                width: 700px;
+            }
+        }
+    }
+    .quantity {
+        width: 45px;
+        height: 40px;
+    }
+    .card-titulo , .card-body-titulo , .tarjeta-titulo , .tarjeta-body-titulo {
+        font-size: 40px;
+    }
+    .tarjeta p , .tarjeta-body p {
+        font-size: 30px;
+    }
+    .tarjetita h2 , .tarjetita-body h4 {
+        font-size: 35px;
+    }
+    footer {
+        justify-content: space-around;
+
+        div {
+            gap: 15px;
+        }
+        img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
     /* Header */
     ul {
         justify-content: end;
@@ -118,8 +319,8 @@
             align-items: center;
         }
         h1, h2 {
-            font-size: 32px;
-            top: 53px;
+            font-size: 35px;
+            top: 55px;
         }
         img {
             width: 60%;
@@ -184,16 +385,17 @@
         grid-area: area4;
     }
     .card-body {
-        padding: 15px;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
+         grid-template-columns: repeat(4, 1fr);
+         grid-template-rows: auto;
         grid-template-areas: 
         
-        "area1 area2 area3"
-        "area4 area5 area6"
+        "area1 area1 area2 area2"
+        "area3 area3 area4 area4"
+        "area5 area5 area6 area6"
         ;
         gap: 20px;
+        padding: 15px;
     }
     .c1 {
         grid-area: area1;
@@ -249,20 +451,18 @@
         "area5 area5"
         "area6 area6"
         ;
-        gap: 40px;
-        padding: 50px;
+        gap: 20px;
+        padding: 25px;
     }
     .t1 {
         grid-area: area1;
-        transition: 0.5s;
 
         &:hover {
             background-image: linear-gradient(white, skyblue);
             color: black;
             box-shadow: 3px 0px 3px 2px $color-messi;
-            h2 {
-                transition: 0.5s;
-                color: black
+            p {
+                color: black;
             }
         }
     }
@@ -271,16 +471,6 @@
 
         &:hover {
             background-image: linear-gradient(brown, rgb(1, 1, 138));
-            h2 {
-                transition: 0.5s;
-                color: white
-            }
-        }
-
-        ul {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            padding: 5px;
         }
     }
     .t3 {
@@ -289,8 +479,7 @@
         &:hover {
             background-image: linear-gradient( to left, blue, white, red, white, blue);
             color: black;
-            h2 {
-                transition: 0.5s;
+            p {
                 color: black
             }
         }
@@ -301,8 +490,7 @@
         &:hover {
             background-image: linear-gradient( white, rgb(247, 138, 156));
             color: black;
-            h2 {
-                transition: 0.5s;
+            p {
                 color: black
             }
         }
@@ -313,15 +501,9 @@
         &:hover {
             background-image: radial-gradient(white, gold, white);
             color: black;
-            h2 {
-                transition: 0.5s;
-                color: black
+            p {
+                color: black;
             }
-        }
-
-        ul {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
         }
     }
     .t6 {
@@ -329,58 +511,138 @@
     }
     .tarjeta-body {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
         grid-template-areas: 
         
-        "area1 area2 area3"
-        "area4 area5 area6"
-        "area7 area7 area7"
-        "area8 area8 area8"
+        "area1 area2"
+        "area3 area4"
+        "area5 area6"
+        "area7 area7"
+        "area8 area8"
         ;
-        gap: 25px;
-        padding: 20px;
+        gap: 20px;
+        padding: 25px;
     }
     .b1 {
         grid-area: area1;
+
+        &:hover {
+            background-image: linear-gradient(to right, green, brown);
+            color: white;
+            p {
+                color: white;
+            }
+        }
     }
     .b2 {
         grid-area: area2;
+
+        &:hover {
+            background-image: linear-gradient(white, green, white);
+            color: black;
+            p {
+                color: black;
+            }
+        }
     }
     .b3 {
         grid-area: area3;
+
+        &:hover {
+            background-image: linear-gradient(red, white);
+            color: black;
+            p {
+                color: black;
+            }
+        }
     }
     .b4 {
         grid-area: area4;
+
+        &:hover {
+            background-image: radial-gradient(white, rgb(252, 234, 133));
+            color: black;
+            p {
+                color: black;
+            }
+        }
     }
     .b5 {
         grid-area: area5;
+
+        &:hover {
+            background-image: radial-gradient(white, black);
+            color: black;
+            p {
+                color: black;
+            }
+        }
     }
     .b6 {
         grid-area: area6;
+
+        &:hover {
+            background-image: linear-gradient(yellow, blue);
+            color: black;
+            p {
+                color: black;
+            }
+        }
     }
     .b7 {
         grid-area: area7;
+
+        &:hover {
+            background-image: radial-gradient(white, gold, white);
+            color: black;
+            p {
+                color: black;
+            }
+        }
     }
     .b8 {
         grid-area: area8;
     }
     .tarjetita , .tarjetita-body {
+        padding: 10px;
         box-shadow: 3px 0px 3px 2px white;
-        transition: 0.5s;
+        transition: 0.7s;
+        height: auto;
+
+        div {
+            justify-content: center;
+            text-align: center;
+
+            div {
+                padding-left: 35px;
+                width: 60%;
+                background-image: none;
+
+                p {
+                    transition: 0.7s;
+                    color: white;
+                }
+            }
+        }
+    }
+    .quantity {
+        background-image: none;
+        color: white;
+        transition: 0.7s;
     }
     .tarjetita:hover {
-        transform: scale(1.1,1.1);
+        transform: scale(0.9,0.9);
     }
     .tarjetita-body:hover {
-        box-shadow: 3px 0px 3px 2px $color-ronaldo;
-        transform: scale(1.1,1.1);
+        transform: scale(0.9,0.9);
     }
-    .card-titulo , .card-body-titulo , .tarjeta-titulo {
-        font-size: 40px;
+    .card-titulo , .card-body-titulo , .tarjeta-titulo , .tarjeta-body-titulo {
+        font-size: 45px;
     }
     .tarjetita h2 , .tarjetita-body h4 {
-        font-size: 35px;
+        text-decoration: underline;
+        font-size: 40px;
     }
     footer {
         justify-content: space-around;
