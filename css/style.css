@@ -47,12 +47,14 @@ main {
 }
 
 footer {
+  font-family: "ADLaM Display", cursive;
   background-color: black;
-  display: flex;
-  font-size: 12px;
-  padding: 15px 0px;
-  justify-content: space-between;
-  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "area1 area2" "area3 area4";
+  padding: 20px 0px;
+  gap: 10px;
 }
 footer img {
   width: 35px;
@@ -62,7 +64,29 @@ footer img {
 }
 footer div {
   display: flex;
+  justify-content: center;
   gap: 5px;
+}
+footer p {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+}
+
+.f1 {
+  grid-area: area1;
+}
+
+.f2 {
+  grid-area: area2;
+}
+
+.f3 {
+  grid-area: area3;
+}
+
+.f4 {
+  grid-area: area4;
 }
 
 .title {
@@ -71,15 +95,15 @@ footer div {
 }
 .title h1, .title h2 {
   text-align: center;
-  font-size: 15px;
+  font-size: 22px;
   position: relative;
-  top: 23px;
+  top: 32px;
   color: black;
   font-family: "Caprasimo", cursive;
 }
 .title img {
   width: 100%;
-  height: 30px;
+  height: 40px;
 }
 
 .description, .text {
@@ -91,6 +115,7 @@ footer div {
 
 .description p, .text p {
   text-align: center;
+  font-size: 15px;
 }
 
 .description img, .text img {
@@ -103,7 +128,7 @@ footer div {
   font-family: "Pacifico", cursive;
   text-align: center;
   padding-top: 20px;
-  font-size: 20px;
+  font-size: 22px;
   color: skyblue;
 }
 
@@ -127,6 +152,7 @@ footer div {
 }
 
 .cajas p, .cajitas p {
+  font-size: 15px;
   padding: 10px;
 }
 
@@ -141,6 +167,7 @@ footer div {
   text-align: center;
   padding-top: 10px;
   color: skyblue;
+  font-size: 22px;
 }
 
 .tarjeta-body-titulo {
@@ -163,6 +190,10 @@ footer div {
   text-align: center;
   padding: 10px 0px 0px 5px;
   font-size: 18px;
+}
+
+.tarjetita p, .tarjetita-body p {
+  font-size: 15px;
 }
 
 .t1 {
@@ -419,17 +450,17 @@ footer div {
     font-size: 14px;
   }
   .title h1, .title h2 {
-    font-size: 19px;
-    top: 25px;
+    font-size: 25px;
+    top: 35px;
   }
-  .description p, .text p, .card p, .card-body p, .tarjeta p, .tarjeta-body p, .quantity {
+  .description p, .text p, .card p, .card-body p, .tarjeta p, .tarjeta-body p, .quantity, footer p {
     font-size: 18px;
   }
   .card-titulo, .card-body-titulo, .tarjeta-titulo, .tarjeta-body-titulo {
     font-size: 25px;
   }
   .tarjetita h2, .tarjetita-body h4 {
-    font-size: 22px;
+    font-size: 21px;
   }
   .tarjetita div, .tarjetita-body div {
     height: 30px;
@@ -448,26 +479,26 @@ footer div {
 }
 @media screen and (min-width: 480px) {
   ul {
-    gap: 18px;
+    gap: 14px;
   }
   li a {
-    font-size: 15px;
+    font-size: 17px;
   }
   .title h1, .title h2 {
-    font-size: 22px;
-    top: 32px;
+    font-size: 28px;
+    top: 40px;
   }
   .title img {
-    height: 40px;
+    height: 50px;
   }
-  .description p, .text p, .card p, .card-body p, .tarjeta p, .tarjeta-body p, .quantity {
-    font-size: 20px;
+  .description p, .text p, .card p, .card-body p, .tarjeta p, .tarjeta-body p, .quantity, footer p {
+    font-size: 21px;
   }
   .card-titulo, .card-body-titulo, .tarjeta-titulo, .tarjeta-body-titulo {
-    font-size: 30px;
+    font-size: 28px;
   }
   .tarjetita h2, .tarjetita-body h4 {
-    font-size: 27px;
+    font-size: 24px;
   }
   .tarjetita div, .tarjetita-body div {
     height: 32px;
@@ -492,20 +523,20 @@ footer div {
     gap: 20px;
   }
   .title h1, .title h2 {
-    font-size: 25px;
+    font-size: 31px;
     top: 40px;
   }
   .title img {
     height: 50px;
   }
-  .description p, .text p, .card p, .card-body p, .tarjeta p, .tarjeta-body p, .quantity {
-    font-size: 22px;
+  .description p, .text p, .card p, .card-body p, .tarjeta p, .tarjeta-body p, .quantity, footer p {
+    font-size: 24px;
   }
   .card-titulo, .card-body-titulo, .tarjeta-titulo, .tarjeta-body-titulo {
-    font-size: 35px;
+    font-size: 31px;
   }
   .tarjetita h2, .tarjetita-body h4 {
-    font-size: 31px;
+    font-size: 27px;
   }
   .tarjetita div, .tarjetita-body div {
     height: 35px;
@@ -527,7 +558,7 @@ footer div {
     justify-content: end;
   }
   li a {
-    font-size: 25px;
+    font-size: 23px;
   }
   /* Inicio */
   .title div {
@@ -537,8 +568,8 @@ footer div {
     align-items: center;
   }
   .title h1, .title h2 {
-    font-size: 32px;
-    top: 53px;
+    font-size: 34px;
+    top: 55px;
   }
   .title img {
     width: 60%;
@@ -553,14 +584,14 @@ footer div {
     width: 50%;
   }
   .description p {
-    font-size: 30px;
+    font-size: 26px;
   }
   .description img {
     height: 100%;
   }
   /* messi y ronaldo */
   .text p {
-    font-size: 30px;
+    font-size: 26px;
   }
   .text img {
     height: 550px;
@@ -584,7 +615,7 @@ footer div {
     padding: 20px;
   }
   .card p {
-    font-size: 30px;
+    font-size: 26px;
   }
   .j1 {
     grid-area: area1;
@@ -607,7 +638,7 @@ footer div {
     padding: 15px;
   }
   .card-body p {
-    font-size: 30px;
+    font-size: 26px;
   }
   .c1 {
     grid-area: area1;
@@ -645,13 +676,13 @@ footer div {
     height: 40px;
   }
   .card-titulo, .card-body-titulo, .tarjeta-titulo, .tarjeta-body-titulo {
-    font-size: 40px;
+    font-size: 34px;
   }
   .tarjeta p, .tarjeta-body p {
-    font-size: 30px;
+    font-size: 26px;
   }
   .tarjetita h2, .tarjetita-body h4 {
-    font-size: 35px;
+    font-size: 30px;
   }
   footer {
     justify-content: space-around;
@@ -662,6 +693,9 @@ footer div {
   footer img {
     width: 70px;
     height: 70px;
+  }
+  footer p {
+    font-size: 26px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -705,7 +739,7 @@ footer div {
     width: 50%;
   }
   .description p {
-    font-size: 30px;
+    font-size: 27px;
   }
   .description img {
     height: 100%;
@@ -964,11 +998,11 @@ footer div {
     transform: scale(0.9, 0.9);
   }
   .card-titulo, .card-body-titulo, .tarjeta-titulo, .tarjeta-body-titulo {
-    font-size: 45px;
+    font-size: 38px;
   }
   .tarjetita h2, .tarjetita-body h4 {
     text-decoration: underline;
-    font-size: 40px;
+    font-size: 31px;
   }
   footer {
     justify-content: space-around;
@@ -979,6 +1013,9 @@ footer div {
   footer img {
     width: 70px;
     height: 70px;
+  }
+  footer p {
+    font-size: 27px;
   }
 }
 

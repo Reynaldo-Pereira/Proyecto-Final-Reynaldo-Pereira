@@ -2,7 +2,7 @@
     font-family: 'Pacifico', cursive;
     text-align: center;
     padding-top: 20px;
-    font-size: 20px;
+    font-size: 22px;
     color: $color-messi;
 }
 .card-body-titulo {
@@ -23,6 +23,7 @@
     border: 2px solid white;
 }
 .cajas p , .cajitas p {
+    font-size: 15px;
     padding: 10px;
 }
 .cajas img , .cajitas img {

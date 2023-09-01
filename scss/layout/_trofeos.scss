@@ -3,6 +3,7 @@
     text-align: center;
     padding-top: 10px;
     color: $color-messi;
+    font-size: 22px;
 }
 .tarjeta-body-titulo {
     color: $color-ronaldo;
@@ -19,6 +20,9 @@
     text-align: center;
     padding: 10px 0px 0px 5px;
     font-size: 18px;
+}
+.tarjetita p , .tarjetita-body p {
+    font-size: 15px;
 }
 .t1 {
     display: flex;

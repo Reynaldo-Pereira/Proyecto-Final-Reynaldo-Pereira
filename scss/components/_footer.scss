@@ -1,10 +1,15 @@
 footer {
+    font-family: 'ADLaM Display', cursive;
     background-color: black;
-    display: flex;
-    font-size: 12px;
-    padding: 15px 0px;
-    justify-content: space-between;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    
+    "area1 area2"
+    "area3 area4";
+    padding: 20px 0px;
+    gap: 10px;
 
     img {
         width: 35px;
@@ -14,6 +19,24 @@ footer {
     }
     div {
         display: flex;
+        justify-content: center;
         gap: 5px;
     }
+    p {
+        color: white;
+        text-align: center;
+        font-size: 15px;
+    }
+}
+.f1 {
+    grid-area: area1;
+}
+.f2 {
+    grid-area: area2; 
+}
+.f3 {
+    grid-area: area3; 
+}
+.f4 {
+    grid-area: area4;
 }
